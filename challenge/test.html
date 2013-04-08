@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+
+<html>
+
+
+	<?php
+		$body = 'Magi-Large-Female-Base1.png';
+		$size_info1 = getimagesize($body);
+
+		$data = file_get_contents($body);
+		$size_info2 = getimagesizefromstring($data);
+		
+		echo"$size_info2";
+	?>
+
+</html>
